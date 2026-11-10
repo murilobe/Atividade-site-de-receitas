@@ -1,0 +1,8 @@
+body { background: #fafafa; }
+.card img { height: 220px; object-fit: cover; }
+.foto { max-height: 420px; object-fit: cover; }
+.info { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 8px; }
+.titulo { background: #eee; padding: 8px 12px; border-radius: 4px; }
+.card { transition: transform .2s; }
+.card:hover { transform: translateY(-4px); }
+

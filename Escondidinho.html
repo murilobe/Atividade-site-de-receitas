@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escondidinho</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Css_site.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">🍽️ Minhas Receitas</a>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    <h1 class="text-center mb-3">Escondidinho</h1>
+    <img src="images/escondidinho.jpg" class="img-fluid rounded w-100 foto" alt="Escondidinho">
+
+    <div class="row text-center my-3 g-2">
+      <div class="col-6 col-md-3"><div class="info">⏱ <b>Tempo:</b> 40 min</div></div>
+      <div class="col-6 col-md-3"><div class="info">📊 <b>Dificuldade:</b> Fácil</div></div>
+      <div class="col-6 col-md-3"><div class="info">🍴 <b>Rendimento:</b> 8 porções</div></div>
+      <div class="col-6 col-md-3"><div class="info">📂 <b>Categoria:</b> Prato principal</div></div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-5">
+        <h4 class="titulo">Ingredientes</h4>
+        <ul>
+          <li>Meia colher (chá) de azeite</li>
+          <li>2 talos de salsão picado</li>
+          <li>1 alho-poró em rodelas</li>
+          <li>200 g de champignons cortados ao meio</li>
+          <li>2 cenouras em tirinhas</li>
+          <li>1 e meia colher (chá) de sal</li>
+          <li>3 ovos</li>
+          <li>2 unidades de iogurte natural desnatado</li>
+          <li>2 colheres (sopa) de farinha de trigo</li>
+          <li>Meia xícara (chá) de queijo minas ralado grosso</li>
+        </ul>
+      </div>
+      <div class="col-md-7">
+        <h4 class="titulo">Modo de preparo</h4>
+        <ol>
+          <li>Em uma panela, refogue o salsão, o alho-poró, os champignons e as cenouras no azeite.</li>
+          <li>Acrescente sal e coloque em um refratário quadrado. Reserve.</li>
+          <li>Em um recipiente, bata os ovos com sal até dobrarem de volume.</li>
+          <li>Acrescente o iogurte, a farinha e misture delicadamente até formar um creme homogêneo; cubra os legumes.</li>
+          <li>Polvilhe com o queijo e leve ao forno a 220 °C por cerca de 25 minutos. Sirva.</li>
+        </ol>
+      </div>
+    </div>
+
+    <a href="index.html" class="btn btn-outline-primary mt-3">← Voltar</a>
+
+    <hr class="my-4">
+    <h4 class="titulo">Comentários</h4>
+    <form id="formComentario" class="mb-4">
+      <div class="mb-3">
+        <label for="nome" class="form-label">Nome</label>
+        <input type="text" id="nome" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="nota" class="form-label">Nota</label>
+        <select id="nota" class="form-select">
+          <option>5</option><option>4</option><option>3</option><option>2</option><option>1</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="texto" class="form-label">Comentário</label>
+        <textarea id="texto" rows="3" class="form-control" required></textarea>
+      </div>
+      <button class="btn btn-danger" type="submit">Enviar comentário</button>
+    </form>
+    <div id="listaComentarios"></div>
+  </main>
+
+  <footer class="text-center text-muted py-4 mt-5 border-top">Interfaces Web I</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/comentarios.js"></script>
+</body>
+</html>
